@@ -19,6 +19,8 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags } = frontMatter
 
+  console.log(editUrl)
+
   return (
     <SectionContainer>
       <BlogSEO
